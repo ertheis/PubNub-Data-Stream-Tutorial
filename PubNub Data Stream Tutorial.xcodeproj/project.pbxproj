@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D1A581B195CC05D00D13708 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1A581A195CC05D00D13708 /* AppDelegate.swift */; };
+		3D1A581D195CC05D00D13708 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1A581C195CC05D00D13708 /* ViewController.swift */; };
+		3D1A5820195CC05D00D13708 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D1A581E195CC05D00D13708 /* Main.storyboard */; };
+		3D1A5822195CC05D00D13708 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D1A5821195CC05D00D13708 /* Images.xcassets */; };
+		3D1A582E195CC05D00D13708 /* PubNub_Data_Stream_TutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1A582D195CC05D00D13708 /* PubNub_Data_Stream_TutorialTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D1A5828195CC05D00D13708 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D1A580D195CC05D00D13708 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D1A5814195CC05D00D13708;
+			remoteInfo = "PubNub Data Stream Tutorial";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D1A5815195CC05D00D13708 /* PubNub Data Stream Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PubNub Data Stream Tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D1A5819195CC05D00D13708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D1A581A195CC05D00D13708 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D1A581C195CC05D00D13708 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D1A581F195CC05D00D13708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D1A5821195CC05D00D13708 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3D1A5827195CC05D00D13708 /* PubNub Data Stream TutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PubNub Data Stream TutorialTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D1A582C195CC05D00D13708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D1A582D195CC05D00D13708 /* PubNub_Data_Stream_TutorialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PubNub_Data_Stream_TutorialTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D1A5812195CC05D00D13708 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D1A5824195CC05D00D13708 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D1A580C195CC05D00D13708 = {
+			isa = PBXGroup;
+			children = (
+				3D1A5817195CC05D00D13708 /* PubNub Data Stream Tutorial */,
+				3D1A582A195CC05D00D13708 /* PubNub Data Stream TutorialTests */,
+				3D1A5816195CC05D00D13708 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D1A5816195CC05D00D13708 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D1A5815195CC05D00D13708 /* PubNub Data Stream Tutorial.app */,
+				3D1A5827195CC05D00D13708 /* PubNub Data Stream TutorialTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D1A5817195CC05D00D13708 /* PubNub Data Stream Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				3D1A581A195CC05D00D13708 /* AppDelegate.swift */,
+				3D1A581C195CC05D00D13708 /* ViewController.swift */,
+				3D1A581E195CC05D00D13708 /* Main.storyboard */,
+				3D1A5821195CC05D00D13708 /* Images.xcassets */,
+				3D1A5818195CC05D00D13708 /* Supporting Files */,
+			);
+			path = "PubNub Data Stream Tutorial";
+			sourceTree = "<group>";
+		};
+		3D1A5818195CC05D00D13708 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D1A5819195CC05D00D13708 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D1A582A195CC05D00D13708 /* PubNub Data Stream TutorialTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D1A582D195CC05D00D13708 /* PubNub_Data_Stream_TutorialTests.swift */,
+				3D1A582B195CC05D00D13708 /* Supporting Files */,
+			);
+			path = "PubNub Data Stream TutorialTests";
+			sourceTree = "<group>";
+		};
+		3D1A582B195CC05D00D13708 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D1A582C195CC05D00D13708 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D1A5814195CC05D00D13708 /* PubNub Data Stream Tutorial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D1A5831195CC05D00D13708 /* Build configuration list for PBXNativeTarget "PubNub Data Stream Tutorial" */;
+			buildPhases = (
+				3D1A5811195CC05D00D13708 /* Sources */,
+				3D1A5812195CC05D00D13708 /* Frameworks */,
+				3D1A5813195CC05D00D13708 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PubNub Data Stream Tutorial";
+			productName = "PubNub Data Stream Tutorial";
+			productReference = 3D1A5815195CC05D00D13708 /* PubNub Data Stream Tutorial.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D1A5826195CC05D00D13708 /* PubNub Data Stream TutorialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D1A5834195CC05D00D13708 /* Build configuration list for PBXNativeTarget "PubNub Data Stream TutorialTests" */;
+			buildPhases = (
+				3D1A5823195CC05D00D13708 /* Sources */,
+				3D1A5824195CC05D00D13708 /* Frameworks */,
+				3D1A5825195CC05D00D13708 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D1A5829195CC05D00D13708 /* PBXTargetDependency */,
+			);
+			name = "PubNub Data Stream TutorialTests";
+			productName = "PubNub Data Stream TutorialTests";
+			productReference = 3D1A5827195CC05D00D13708 /* PubNub Data Stream TutorialTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D1A580D195CC05D00D13708 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = PubNub;
+				TargetAttributes = {
+					3D1A5814195CC05D00D13708 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					3D1A5826195CC05D00D13708 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 3D1A5814195CC05D00D13708;
+					};
+				};
+			};
+			buildConfigurationList = 3D1A5810195CC05D00D13708 /* Build configuration list for PBXProject "PubNub Data Stream Tutorial" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D1A580C195CC05D00D13708;
+			productRefGroup = 3D1A5816195CC05D00D13708 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D1A5814195CC05D00D13708 /* PubNub Data Stream Tutorial */,
+				3D1A5826195CC05D00D13708 /* PubNub Data Stream TutorialTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D1A5813195CC05D00D13708 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D1A5820195CC05D00D13708 /* Main.storyboard in Resources */,
+				3D1A5822195CC05D00D13708 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D1A5825195CC05D00D13708 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D1A5811195CC05D00D13708 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D1A581D195CC05D00D13708 /* ViewController.swift in Sources */,
+				3D1A581B195CC05D00D13708 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D1A5823195CC05D00D13708 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D1A582E195CC05D00D13708 /* PubNub_Data_Stream_TutorialTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D1A5829195CC05D00D13708 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D1A5814195CC05D00D13708 /* PubNub Data Stream Tutorial */;
+			targetProxy = 3D1A5828195CC05D00D13708 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D1A581E195CC05D00D13708 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D1A581F195CC05D00D13708 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D1A582F195CC05D00D13708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3D1A5830195CC05D00D13708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D1A5832195CC05D00D13708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "PubNub Data Stream Tutorial/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3D1A5833195CC05D00D13708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "PubNub Data Stream Tutorial/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3D1A5835195CC05D00D13708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PubNub Data Stream Tutorial.app/PubNub Data Stream Tutorial";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PubNub Data Stream TutorialTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		3D1A5836195CC05D00D13708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PubNub Data Stream Tutorial.app/PubNub Data Stream Tutorial";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PubNub Data Stream TutorialTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D1A5810195CC05D00D13708 /* Build configuration list for PBXProject "PubNub Data Stream Tutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D1A582F195CC05D00D13708 /* Debug */,
+				3D1A5830195CC05D00D13708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D1A5831195CC05D00D13708 /* Build configuration list for PBXNativeTarget "PubNub Data Stream Tutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D1A5832195CC05D00D13708 /* Debug */,
+				3D1A5833195CC05D00D13708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3D1A5834195CC05D00D13708 /* Build configuration list for PBXNativeTarget "PubNub Data Stream TutorialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D1A5835195CC05D00D13708 /* Debug */,
+				3D1A5836195CC05D00D13708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D1A580D195CC05D00D13708 /* Project object */;
+}
