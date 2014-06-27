@@ -9,13 +9,13 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, PNDelegate {
                             
     var window: UIWindow?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
-        // Override point for customization after application launch.
+        PubNub.setDelegate(self)
         return true
     }
 
@@ -40,7 +40,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
+    
+    func pubnubClient(client: PubNub!, didConnectToOrigin origin: String!) {
+        println("DELEGATE: Connected to origin \(origin)")
+    }
+    
+    func pubnubClient(client: PubNub!, didSubscribeOnChannels channels: Array<PNChannel>!) {
+        println("DELEGATE: Subscribed to channel(s): \(channels[0])")
+    }
+    
+    func pubnubClient(client: PubNub!, didReceiveMessage message: PNMessage!) {
+        println("DELEGATE: Message received.")
+    }
+    
+    func pubnubClient(client: PubNub!, didSendMessage message: PNMessage!) {
+        println("DELEGATE: client sent message: \(message.message)")
+    }
 }
 

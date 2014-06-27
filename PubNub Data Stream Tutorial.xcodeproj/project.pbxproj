@@ -12,6 +12,7 @@
 		3D1A5820195CC05D00D13708 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D1A581E195CC05D00D13708 /* Main.storyboard */; };
 		3D1A5822195CC05D00D13708 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D1A5821195CC05D00D13708 /* Images.xcassets */; };
 		3D1A582E195CC05D00D13708 /* PubNub_Data_Stream_TutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1A582D195CC05D00D13708 /* PubNub_Data_Stream_TutorialTests.swift */; };
+		96267EF5A4A148BCB75E22EC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B868FF9D3A834FD9A5B7DDD4 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,9 @@
 		3D1A5827195CC05D00D13708 /* PubNub Data Stream TutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PubNub Data Stream TutorialTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D1A582C195CC05D00D13708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D1A582D195CC05D00D13708 /* PubNub_Data_Stream_TutorialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PubNub_Data_Stream_TutorialTests.swift; sourceTree = "<group>"; };
+		3D1A5837195CCFE400D13708 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		4B875D51E43D4FB3ADA94654 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		B868FF9D3A834FD9A5B7DDD4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96267EF5A4A148BCB75E22EC /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,12 +59,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C41D051E04F4A9FA1C190EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B868FF9D3A834FD9A5B7DDD4 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3D1A580C195CC05D00D13708 = {
 			isa = PBXGroup;
 			children = (
 				3D1A5817195CC05D00D13708 /* PubNub Data Stream Tutorial */,
 				3D1A582A195CC05D00D13708 /* PubNub Data Stream TutorialTests */,
 				3D1A5816195CC05D00D13708 /* Products */,
+				4B875D51E43D4FB3ADA94654 /* Pods.xcconfig */,
+				2C41D051E04F4A9FA1C190EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +92,7 @@
 			children = (
 				3D1A581A195CC05D00D13708 /* AppDelegate.swift */,
 				3D1A581C195CC05D00D13708 /* ViewController.swift */,
+				3D1A5837195CCFE400D13708 /* BridgingHeader.h */,
 				3D1A581E195CC05D00D13708 /* Main.storyboard */,
 				3D1A5821195CC05D00D13708 /* Images.xcassets */,
 				3D1A5818195CC05D00D13708 /* Supporting Files */,
@@ -116,9 +132,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D1A5831195CC05D00D13708 /* Build configuration list for PBXNativeTarget "PubNub Data Stream Tutorial" */;
 			buildPhases = (
+				0458F07B4C21490C88E0C95D /* Check Pods Manifest.lock */,
 				3D1A5811195CC05D00D13708 /* Sources */,
 				3D1A5812195CC05D00D13708 /* Frameworks */,
 				3D1A5813195CC05D00D13708 /* Resources */,
+				AA4931374DE9436AAD37559F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,6 +220,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0458F07B4C21490C88E0C95D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AA4931374DE9436AAD37559F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3D1A5811195CC05D00D13708 /* Sources */ = {
@@ -322,23 +373,27 @@
 		};
 		3D1A5832195CC05D00D13708 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B875D51E43D4FB3ADA94654 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "PubNub Data Stream Tutorial/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PubNub Data Stream Tutorial/BridgingHeader.h";
 			};
 			name = Debug;
 		};
 		3D1A5833195CC05D00D13708 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B875D51E43D4FB3ADA94654 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "PubNub Data Stream Tutorial/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PubNub Data Stream Tutorial/BridgingHeader.h";
 			};
 			name = Release;
 		};
@@ -397,6 +452,7 @@
 				3D1A5833195CC05D00D13708 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D1A5834195CC05D00D13708 /* Build configuration list for PBXNativeTarget "PubNub Data Stream TutorialTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +461,7 @@
 				3D1A5836195CC05D00D13708 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
